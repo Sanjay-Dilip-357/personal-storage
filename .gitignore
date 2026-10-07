@@ -1,0 +1,34 @@
+# Environment
+.env
+
+# Storage (private files)
+storage/private/uploads/*
+storage/private/temporary/*
+storage/logs/*
+
+# Keep directory structure
+!storage/private/uploads/.gitkeep
+!storage/private/temporary/.gitkeep
+!storage/logs/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Composer
+/vendor/
+
+# Node (if ever used)
+/node_modules/
+
+# Misc
+*.log
+*.bak
+*.tmp
