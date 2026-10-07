@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection Dropped — Personal Storage</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+    <style>
+        .offline-card {
+            text-align: center;
+            max-width: 480px;
+            width: 100%;
+        }
+        .offline-icon {
+            font-size: 3.5rem;
+            margin-bottom: var(--space-4);
+            filter: drop-shadow(0 0 15px rgba(239, 68, 68, 0.3));
+            animation: pulse 2s infinite ease-in-out;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="auth-body">
+
+    <div class="auth-bg">
+        <div class="auth-bg__orb auth-bg__orb--1"></div>
+        <div class="auth-bg__orb auth-bg__orb--2"></div>
+    </div>
+
+    <main class="auth-page">
+        <div class="card card--glass offline-card">
+            <div class="offline-icon">🔌</div>
+            <h1 class="auth-title">Connection Dropped</h1>
+            <p class="auth-subtitle" style="margin-bottom: var(--space-6);">You are currently offline</p>
+            <p style="font-size: 14px; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: var(--space-8);">
+                Your private storage space requires an active secure link. Please check your local network connection. Your local vault configuration will sync immediately upon reconnection.
+            </p>
+            <button onclick="window.location.reload()" class="btn btn--primary btn--full">Retry Connection</button>
+        </div>
+    </main>
+
+</body>
+</html>

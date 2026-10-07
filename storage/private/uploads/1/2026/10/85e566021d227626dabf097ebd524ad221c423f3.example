@@ -1,0 +1,39 @@
+# ==============================================
+# PERSONAL STORAGE — Environment Configuration
+# ==============================================
+# Copy this file to .env and fill in your values.
+# NEVER commit .env to version control.
+
+# Application
+APP_NAME="Personal Storage"
+APP_ENV=production
+APP_URL=http://localhost
+APP_DEBUG=false
+
+# Database (MySQL only)
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=personal_storage
+DB_USERNAME=root
+DB_PASSWORD=
+
+# SMTP Mail
+SMTP_HOST=smtp.mailtrap.io
+SMTP_PORT=587
+SMTP_USERNAME=
+SMTP_PASSWORD=
+SMTP_ENCRYPTION=tls
+SMTP_FROM_EMAIL=noreply@example.com
+SMTP_FROM_NAME="Personal Storage"
+
+# Session
+SESSION_LIFETIME=120
+SESSION_NAME=ps_session
+
+# Security
+OTP_EXPIRY_SECONDS=60
+OTP_MAX_ATTEMPTS=5
+OTP_RESEND_COOLDOWN=60
+RATE_LIMIT_LOGIN=5
+RATE_LIMIT_REGISTER=3
+RATE_LIMIT_WINDOW=900

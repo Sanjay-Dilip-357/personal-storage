@@ -1,0 +1,78 @@
+/* ==============================================
+   PERSONAL STORAGE — Settings Page Styles
+   ============================================== */
+
+.settings-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 340px;
+    gap: var(--space-6);
+    align-items: start;
+}
+
+.settings-main-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.settings-side-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.settings-card {
+    padding: var(--space-6);
+}
+
+.settings-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--space-6);
+}
+
+/* ── Danger Zone ──────────────────────────── */
+.danger-zone-card {
+    border-color: rgba(239, 68, 68, 0.25);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.03), rgba(17, 24, 39, 0.8));
+}
+
+.danger-zone-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+/* ── Vault Overview Stat List ─────────────── */
+.vault-overview-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: var(--text-sm);
+}
+
+.vault-overview-stat:last-of-type {
+    border-bottom: none;
+}
+
+.vault-overview-stat .stat-label {
+    color: var(--color-text-muted);
+}
+
+.vault-overview-stat .stat-value {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-primary);
+}
+
+/* ── Responsive ───────────────────────────── */
+@media (max-width: 900px) {
+    .settings-grid-layout {
+        grid-template-columns: 1fr;
+    }
+}
